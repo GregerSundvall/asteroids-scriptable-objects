@@ -1,3 +1,4 @@
+using DefaultNamespace.GameEvents;
 using UnityEditor.VersionControl;
 using UnityEngine;
 using Variables;
@@ -12,6 +13,8 @@ namespace Ship
         
         [SerializeField] private float _throttlePowerSimple;
         [SerializeField] private float _rotationPowerSimple;
+
+        
 
         private Rigidbody2D _rigidbody;
         

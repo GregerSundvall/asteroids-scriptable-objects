@@ -24,11 +24,6 @@ namespace DefaultNamespace.ScriptableEvents
         }
     }
 
-    [CreateAssetMenu(fileName = "new ScriptableEvent", menuName = "ScriptableObjects/ScriptableEvent", order = 0)]
-    public class ScriptableEvent : ScriptableEventBase
-    {
-    }
-
     public abstract class ScriptableEvent<TPayload> : ScriptableEventBase
     {
         private event Action<TPayload> _event;
