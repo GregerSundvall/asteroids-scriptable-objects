@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Asteroid
   - Laser
+  - HealthPickUp
+  - Ship
   layers:
   - Default
   - TransparentFX

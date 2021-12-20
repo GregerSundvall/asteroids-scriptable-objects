@@ -32,6 +32,12 @@ namespace UI
             SetHealthText($"Health: {newValue.GetValue()}");
         }
 
+        public void PickedUpHealth()
+        {
+            _healthVar.ApplyChange(50);
+            SetHealthText($"Health: {_healthVar.Value}");
+        }
+
         private void SetHealthText(string text)
         {
             _healthText.text = text;

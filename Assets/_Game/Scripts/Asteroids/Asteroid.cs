@@ -1,4 +1,3 @@
-using Assignment;
 using DefaultNamespace.ScriptableEvents;
 using UnityEngine;
 using Variables;
