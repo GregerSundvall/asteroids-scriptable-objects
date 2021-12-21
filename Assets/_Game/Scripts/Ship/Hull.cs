@@ -11,6 +11,8 @@ namespace Ship
         [SerializeField] private ScriptableEventIntReference _onHealthChangedEvent;
         [SerializeField] private ScriptableEventBase _healthChanged;
         [SerializeField] private ScriptableEventBase _outOfBounds;
+        [SerializeField] private ScriptableEventBase _crashedIntoAsteroid;
+        
         
         [SerializeField] private IntReference _healthRef;
         [SerializeField] private IntObservable _healthObservable;
@@ -25,6 +27,7 @@ namespace Ship
                 //_onHealthChangedEvent.Raise(_healthRef);
                 _healthObservable.ApplyChange(-1);
                 _healthChanged.Raise();
+                _crashedIntoAsteroid.Raise();
             }
             
 
