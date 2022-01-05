@@ -6,5 +6,6 @@ namespace ScriptableEvents
     [CreateAssetMenu]
     public class ScriptableEvent : ScriptableEventBase
     {
+        public bool enabled = true;
     }
 }
